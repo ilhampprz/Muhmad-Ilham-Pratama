@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Tugas Bootstrap</title>
+</head>
+
+<body>
+    <section id="header">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/img/h1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Office</h5>
+                        <p>Great</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/img/h2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Rest Area </h5>
+                        <p>Ez</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/img/h3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Office 2</h5>
+                        <p>Nice</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ilhampprz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="main-content">
+        <div class="container-fluid mt-3">
+            <div class="row">
+
+                <div class="col-md-3 mb-5">
+
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item bg-dark text-warning" aria-current="true">Hobi</li>
+                        <li class="list-group-item">Basketball</li>
+                        <li class="list-group-item">Football</li>
+                        <li class="list-group-item">Swim</li>
+                        <li class="list-group-item">Badminton</li>
+                    </ul>
+
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.youtube.com/embed/SMitd4JDB5c" title="YouTube video player"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-5">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tabs-one-tab" data-bs-toggle="tab"
+                                data-bs-target="#tabs-one" type="button" role="tab" aria-controls="tabs-one"
+                                aria-selected="true">Resume</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tabs-two-tab" data-bs-toggle="tab" data-bs-target="#tabs-two"
+                                type="button" role="tab" aria-controls="tabs-two"
+                                aria-selected="false">Pendidikan</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tabs-three-tab" data-bs-toggle="tab"
+                                data-bs-target="#tabs-three" type="button" role="tab" aria-controls="tabs-three"
+                                aria-selected="false">Sertifikat</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tabs-four-tab" data-bs-toggle="tab" data-bs-target="#tabs-four"
+                                type="button" role="tab" aria-controls="tabs-four"
+                                aria-selected="false">Gallery</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tabs-one" role="tabpanel"
+                            aria-labelledby="tabs-one-tab">
+                            <!-- Resume -->
+                            <div class="accordion mt-4" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            My Profile
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                Nama saya Muhamad Ilham Pratama saya lahir di kota Jakarta pada tanggal 31 Mei 2001. Sedikit perkenalan tentang saya, saya anak pertama dari 3 bersaudara Sekarang saya berkuliah di STT Terpadu Nurul Fikri Jurusan Teknik Informatika Semester 6, saat saya menjadi maba dulu saya mengikuti Ospek secara Offline dan itu sangat berkesan bagi saya, lalu saat saya , lalu saat saya semester 1 saya mendaftar menjadi panitia pemira dan itu adalah kepenitiaan pertama yang saya ikuti di kampus.
+
+
+                                            </p>
+                                            <p>
+                                                Lalu saat masuk semester 2 saya mendaftar menjadi salah satu staff BEM di kampus saya, saya senang karena saya diterima akan tetapi saya juga sedih disaat saya menjabat covid datang ,dan itu menghambat saya untuk melakukan program kerja saya di BEM.Akan tetapi saya dan divisi saya tetap melakukan proker yang sudah di tetapkan dari awal walaupun sulit .
+
+                                                Waktu pun berlalu sampai akhirnya saya lepas jabatan ,lalu waktu pun masuk ke semester 3 ,di semester 3 pun covid masih sangat tinggi hingga akhirnya di semester 5 kemarin saya Vaksin dan saya sudah mulai berani mengikuti kepanitiaan lain seperti LDMKM tentu dengan standar Prokes yang di tetapkan Pemerintah. Sekian perkenalan dari ,Terima kasih.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="tabs-two" role="tabpanel" aria-labelledby="tabs-two-tab">
+
+                            <div class="table-responsive mt-3">
+                                <table class="table table-striped table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Tingkat</th>
+                                            <th scope="col">Nama Sekolah</th>
+                                            <th scope="col">Tahun Pendidikan</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>SD</td>
+                                                <td>SDIT Ponduk Duta</td>
+                                                <td>2008-20114</td>
+                                              </tr>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>SMP</td>
+                                            <td>SMPN 8 Depok</td>
+                                            <td>2014-2017</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>SMK</td>
+                                            <td>SMKN 3 Depok</td>
+                                            <td>2017-2019</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Universitas</td>
+                                            <td>STT NF</td>
+                                            <td>2019-NOW</td>
+                                          </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="tabs-three" role="tabpanel" aria-labelledby="tabs-three-tab">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-3 mt-3">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="src/img/sertifikat/s1.PNG" class="card-img-top" alt="sertifikat1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sertifikat 1</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">SKOLPER 17-18 Sept 2019</h6>
+                                            <p class="card-text">Sekolah Pergerakan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="src/img/sertifikat/s2.PNG" class="card-img-top" alt="sertifikat2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sertifikat 2</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Mitra Media</h6>
+                                            <p class="card-text">Sharing Ilmu Jurnalistik.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="src/img/sertifikat/s3.jpg" class="card-img-top" alt="sertifikat3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sertifikat 3</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Symposium</h6>
+                                            <p class="card-text">Information System.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="tabs-four" role="tabpanel" aria-labelledby="tabs-four-tab">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-3 mt-3">
+                                <div class="col">
+                                    <div class="card h-10">
+                                        <img src="src/img/gallery/g1.jpeg" class="card-img-top" alt="gallery1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="src/img/gallery/g2.jpeg" class="card-img-top" alt="gallery2">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-10">
+                                        <img src="src/img/gallery/g3.jpeg" class="card-img-top" alt="gallery3">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-5">
+
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item bg-secondary text-info" aria-current="true">Favorite Food</li>
+                            <li class="list-group-item">Sate Ayam</li>
+                            <li class="list-group-item">Nasi Goreng</li>
+                            <li class="list-group-item">Ayam bakar</li>
+                            <li class="list-group-item">Rendang</li>
+                    </ul>
+
+                    <ul class="list-group">
+                        <li class="list-group-item bg-primary" aria-current="true">Minuman Favorite</li>
+                        <li class="list-group-item">Pop Ice</li>
+                        <li class="list-group-item">Mineral water</li>
+                        <li class="list-group-item">Thai Tea</li>
+                        <li class="list-group-item">Green Tea</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="alert alert-warning" role="alert" align="center">
+        Desaign By Muhamad Ilham Pratama | &#169; @2022
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
